@@ -12,14 +12,15 @@ end
 
 def greet_crew(crew)
   # crew.each {|crew_member| "Hello #{crew_member}."}
-  
-  i = 0 
-  greeting = []
-  while i < crew.length do 
-    greeting << "Hello #{crew[i]}."
-    i += 1 
-  end
-  greeting
+  crew.map {|crew_member| "Hello #{crew_member}."}
+
+  # i = 0 
+  # greeting = []
+  # while i < crew.length do 
+  #   greeting << "Hello #{crew[i]}."
+  #   i += 1 
+  # end
+  # greeting
 end
 
 def engage
